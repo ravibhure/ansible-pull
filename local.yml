@@ -1,0 +1,9 @@
+---
+- name: testlocal
+  hosts: localhost
+  connection: local
+  gather_facts: no
+  vars:
+  - hi: hello
+  tasks:
+  - debug: msg="echo {{hi}}"
